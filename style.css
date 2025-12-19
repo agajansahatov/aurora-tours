@@ -1,5 +1,7 @@
 .carousel__image {
 	filter: brightness(0.6);
 	min-height: 400px;
-	max-height: calc(100vh - 53px);
+
+	/* was: max-height: calc(100vh - 53px); */
+	max-height: 80vh;
 }

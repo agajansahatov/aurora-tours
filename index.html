@@ -5,379 +5,244 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Aurora Tours</title>
+
 		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
 			rel="stylesheet"
-			integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-			crossorigin="anonymous" />
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
 		<link rel="stylesheet" href="style.css" />
-		<script
-			defer
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-			crossorigin="anonymous"></script>
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 	</head>
-	<body>
-		<nav class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
-			<div class="container-lg">
-				<a class="navbar-brand text-uppercase" href="#">Aurora Tours</a>
+
+	<body class="bg-light">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand" href="#"
+					>Aurora <span class="text-warning">Tours</span></a
+				>
 				<button
 					class="navbar-toggler"
 					type="button"
 					data-bs-toggle="collapse"
-					data-bs-target="#navbarNavAltMarkup"
-					aria-controls="navbarNavAltMarkup"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
 					aria-expanded="false"
-					aria-label="Toggle navigation">
+					aria-label="Toggle navigation"
+				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav ms-auto">
-						<a class="nav-link" href="#packages">Packages</a>
-						<a class="nav-link" href="#faq">FAQ</a>
-					</div>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Packages</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contacts</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</nav>
 
-		<main>
-			<section class="modal fade" tabindex="-1" id="booking-modal">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title">Book a tour</h5>
-							<button
-								type="button"
-								class="btn-close"
-								data-bs-dismiss="modal"
-								aria-label="Close"></button>
-						</div>
-						<div class="modal-body">
-							<form action="#">
-								<div class="row g-2">
-									<div class="col-sm-6">
-										<div class="form-floating">
-											<input
-												id="email1"
-												type="email"
-												class="form-control"
-												placeholder="Doesn't matter" />
-											<label for="email1">Email address</label>
-										</div>
-									</div>
-									<div class="col-sm-6">
-										<div class="form-floating">
-											<select id="select1" class="form-select">
-												<option>Tromso, Norway - $899</option>
-												<option>Reykjavik, Iceland - $799</option>
-												<option>Yukon, Canada - $849</option>
-											</select>
-											<label for="select1">Pick a tour</label>
-										</div>
-									</div>
-								</div>
-							</form>
-						</div>
-						<div class="modal-footer">
-							<button
-								type="button"
-								class="btn btn-secondary"
-								data-bs-dismiss="modal">
-								Close
-							</button>
-							<button type="button" class="btn btn-primary">Checkout</button>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="carousel-hero" class="carousel slide">
-				<div class="carousel-indicators">
-					<button
-						type="button"
-						data-bs-target="#carousel-hero"
-						data-bs-slide-to="0"
-						class="active"
-						aria-current="true"
-						aria-label="Slide 1"></button>
-					<button
-						type="button"
-						data-bs-target="#carousel-hero"
-						data-bs-slide-to="1"
-						aria-label="Slide 2"></button>
-					<button
-						type="button"
-						data-bs-target="#carousel-hero"
-						data-bs-slide-to="2"
-						aria-label="Slide 3"></button>
-				</div>
-
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img
-							src="https://source.unsplash.com/vUePu7hAYAQ/1400x650"
-							class="d-block w-100 object-fit-cover carousel__image"
-							alt="Photo of Aurora" />
-						<div class="carousel-caption top-0 mt-2 mt-md-5 py-lg-4">
-							<p class="fs-4 mt-4 mt-sm-5 text-uppercase">
-								Discover the hidden world
-							</p>
-							<h1 class="display-1 fw-bold text-capitalize mt-0 mt-md-2">
-								The Aurora Tours
-							</h1>
-							<button
-								class="btn btn-primary px-sm-4 py-sm-2 fs-5 mt-2 mt-sm-4 mt-lg-5"
-								data-bs-toggle="modal"
-								data-bs-target="#booking-modal">
-								Book a tour
-							</button>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img
-							src="https://source.unsplash.com/q_X-lyHxcdk/1400x650"
-							class="d-block w-100 object-fit-cover carousel__image"
-							alt="Photo of Aurora" />
-						<div class="carousel-caption top-0 mt-2 mt-md-5 py-lg-4">
-							<p class="fs-4 mt-4 mt-sm-5 text-uppercase">
-								The season has arrived
-							</p>
-							<h1 class="display-1 fw-bold text-capitalize mt-0 mt-md-2">
-								3 available tours
-							</h1>
-							<button
-								class="btn btn-primary px-sm-4 py-sm-2 fs-5 mt-2 mt-sm-4 mt-lg-5"
-								data-bs-toggle="modal"
-								data-bs-target="#booking-modal">
-								Book a tour
-							</button>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img
-							src="https://source.unsplash.com/va_nrBLonf8/1400x650"
-							class="d-block w-100 object-fit-cover carousel__image"
-							alt="Photo of Aurora" />
-						<div class="carousel-caption top-0 mt-2 mt-md-5 py-lg-4">
-							<p class="fs-4 mt-4 mt-sm-5 text-uppercase">
-								Destination Activities
-							</p>
-							<h1 class="display-1 fw-bold text-capitalize mt-0 mt-md-2">
-								Go glacier hiking
-							</h1>
-							<button
-								class="btn btn-primary px-sm-4 py-sm-2 fs-5 mt-2 mt-sm-4 mt-lg-5"
-								data-bs-toggle="modal"
-								data-bs-target="#booking-modal">
-								Book a tour
-							</button>
-						</div>
-					</div>
-				</div>
+		<div
+			id="carouselExampleCaptions"
+			class="carousel slide"
+			data-bs-ride="carousel"
+		>
+			<div class="carousel-indicators">
 				<button
-					class="carousel-control-prev"
 					type="button"
-					data-bs-target="#carousel-hero"
-					data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
+					data-bs-target="#carouselExampleCaptions"
+					data-bs-slide-to="0"
+					class="active"
+					aria-current="true"
+					aria-label="Slide 1"
+				></button>
 				<button
-					class="carousel-control-next"
 					type="button"
-					data-bs-target="#carousel-hero"
-					data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
-			</section>
-
-			<section class="overview bg-dark-subtle py-5">
-				<div
-					class="container d-flex flex-column flex-sm-row justify-content-between text-center my-3">
-					<div>
-						<i class="bi bi-airplane-fill me-2"></i>
-						3 amazing destinations
-					</div>
-					<div>
-						<i class="bi bi-wallet-fill me-2"></i>
-						Only pay 5% up front
-					</div>
-					<div>
-						<i class="bi bi-patch-check-fill me-2"></i>
-						1000's of customers
-					</div>
-				</div>
-			</section>
-
-			<section id="packages" class="container my-5">
-				<h2 class="text-center py-5">Packages</h2>
-
-				<div class="row">
-					<div class="col-md-4 my-2">
-						<div class="card">
-							<img
-								src="https://source.unsplash.com/G7TcDrOnsUo/400x300"
-								class="card-img-top"
-								alt="Aurora Image" />
-							<div class="card-body">
-								<h5 class="card-title">Tromso, Norway - $899</h5>
-								<p class="card-text">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Voluptatibus dicta mollitia minima ratione assumenda
-									accusantium.
-								</p>
-								<a
-									href="#"
-									class="btn btn-primary"
-									data-bs-toggle="modal"
-									data-bs-target="#booking-modal"
-									data-bs-toggle="modal"
-									data-bs-target="#booking-modal">
-									Book tour
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 my-2">
-						<div class="card">
-							<img
-								src="https://source.unsplash.com/Ku59NWmVcnI/400x300"
-								class="card-img-top"
-								alt="Aurora Image" />
-							<div class="card-body">
-								<h5 class="card-title">Reykjavik, Iceland - $799</h5>
-								<p class="card-text">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Voluptatibus dicta mollitia minima ratione assumenda
-									accusantium.
-								</p>
-								<a
-									href="#"
-									class="btn btn-primary"
-									data-bs-toggle="modal"
-									data-bs-target="#booking-modal">
-									Book tour
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 my-2">
-						<div class="card">
-							<img
-								src="https://source.unsplash.com/w_J5vi9jaIs/400x300"
-								class="card-img-top"
-								alt="Aurora Image" />
-							<div class="card-body">
-								<h5 class="card-title">Yukon, Canada - $849</h5>
-								<p class="card-text">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Voluptatibus dicta mollitia minima ratione assumenda
-									accusantium.
-								</p>
-								<a
-									href="#"
-									class="btn btn-primary"
-									data-bs-toggle="modal"
-									data-bs-target="#booking-modal">
-									Book tour
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="faq" class="container py-md-5">
-				<h2 class="my-5 text-center">FAQ</h2>
-				<div class="accordion w-75 mx-auto" id="accordionExample">
-					<div class="accordion-item">
-						<h2 class="accordion-header">
-							<button
-								class="accordion-button"
-								type="button"
-								data-bs-toggle="collapse"
-								data-bs-target="#collapseOne"
-								aria-expanded="true"
-								aria-controls="collapseOne">
-								How long are the trips?
-							</button>
-						</h2>
-						<div
-							id="collapseOne"
-							class="accordion-collapse collapse show"
-							data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sit
-								reprehenderit mollitia delectus exercitationem, deleniti eveniet
-								deserunt corrupti eum placeat quo, impedit dignissimos iure a,
-								asperiores harum enim soluta!
-							</div>
-						</div>
-					</div>
-					<div class="accordion-item">
-						<h2 class="accordion-header">
-							<button
-								class="accordion-button collapsed"
-								type="button"
-								data-bs-toggle="collapse"
-								data-bs-target="#collapseTwo"
-								aria-expanded="false"
-								aria-controls="collapseTwo">
-								Is the flight included?
-							</button>
-						</h2>
-						<div
-							id="collapseTwo"
-							class="accordion-collapse collapse"
-							data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sit
-								reprehenderit mollitia delectus exercitationem, deleniti eveniet
-								deserunt corrupti eum placeat quo, impedit dignissimos iure a,
-								asperiores harum enim soluta!
-							</div>
-						</div>
-					</div>
-					<div class="accordion-item">
-						<h2 class="accordion-header">
-							<button
-								class="accordion-button collapsed"
-								type="button"
-								data-bs-toggle="collapse"
-								data-bs-target="#collapseThree"
-								aria-expanded="false"
-								aria-controls="collapseThree">
-								Can I cancel after booking?
-							</button>
-						</h2>
-						<div
-							id="collapseThree"
-							class="accordion-collapse collapse"
-							data-bs-parent="#accordionExample">
-							<div class="accordion-body">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sit
-								reprehenderit mollitia delectus exercitationem, deleniti eveniet
-								deserunt corrupti eum placeat quo, impedit dignissimos iure a,
-								asperiores harum enim soluta!
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
-
-		<footer class="bg-dark py-5 mt-5">
-			<div class="container text-light text-center">
-				<p class="display-5 mb-3">Auro Tours</p>
-				<small class="text-white-50 d-block">
-					Copyright &copy; 2023 Agajan Sahatov
-				</small>
-				<small class="text-white-50 d-block"> All Rights Reserved </small>
+					data-bs-target="#carouselExampleCaptions"
+					data-bs-slide-to="1"
+					aria-label="Slide 2"
+				></button>
+				<button
+					type="button"
+					data-bs-target="#carouselExampleCaptions"
+					data-bs-slide-to="2"
+					aria-label="Slide 3"
+				></button>
 			</div>
-		</footer>
+
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img
+						src="https://images.unsplash.com/photo-1571371867188-fdc3f1f8e62d?auto=format&fit=crop&w=1400&h=650&q=80"
+						class="d-block w-100 object-fit-cover carousel__image"
+						alt="Photo of Aurora"
+					/>
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Evergreen Forest</h5>
+						<p>Some representative placeholder content for the first slide.</p>
+						<a href="#" class="btn btn-warning">Learn More</a>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<img
+						src="https://images.unsplash.com/photo-1563547257011-054b1054e185?auto=format&fit=crop&w=1400&h=650&q=80"
+						class="d-block w-100 object-fit-cover carousel__image"
+						alt="Photo of Aurora"
+					/>
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Beautiful Lake</h5>
+						<p>Some representative placeholder content for the second slide.</p>
+						<a href="#" class="btn btn-warning">Learn More</a>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<img
+						src="https://images.unsplash.com/photo-1529963183134-61a90db47eaf?auto=format&fit=crop&w=1400&h=650&q=80"
+						class="d-block w-100 object-fit-cover carousel__image"
+						alt="Photo of Aurora"
+					/>
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Amazing Mountain</h5>
+						<p>Some representative placeholder content for the third slide.</p>
+						<a href="#" class="btn btn-warning">Learn More</a>
+					</div>
+				</div>
+			</div>
+
+			<button
+				class="carousel-control-prev"
+				type="button"
+				data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="prev"
+			>
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button
+				class="carousel-control-next"
+				type="button"
+				data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="next"
+			>
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+
+		<section class="mt-5 mb-5">
+			<div class="container">
+				<h2 class="text-center">About Us</h2>
+
+				<div class="row mt-5">
+					<!-- text column: spacing on mobile -->
+					<div class="col-md-6 mb-4 mb-md-0">
+						<h3>Aurora Tours</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							Voluptatibus, maxime quae ab voluptatum accusantium repudiandae
+							illum amet saepe, sequi, quia adipisci delectus. Cum blanditiis
+							quos, suscipit velit modi ipsa neque.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+							dolores molestiae nihil cumque similique, recusandae esse
+							reprehenderit officia sapiente alias ab ea incidunt, totam
+							dignissimos cum perferendis tempora.
+						</p>
+
+						<!-- FIX: remove py-5; use normal button padding -->
+						<a href="#" class="btn btn-warning py-2 px-4">Read More</a>
+					</div>
+
+					<!-- image column: top spacing only on mobile -->
+					<div class="col-md-6 mt-4 mt-md-0">
+						<img
+							src="https://images.unsplash.com/photo-1550496913-b1a19c3779e9?auto=format&fit=crop&w=400&h=300&q=80"
+							class="img-fluid rounded"
+							alt="Aurora Image"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="mt-5 mb-5">
+			<div class="container">
+				<h2 class="text-center">Packages</h2>
+
+				<div class="row mt-4 gap-4">
+					<div class="col-md-4">
+						<div class="card">
+							<img
+								src="https://images.unsplash.com/photo-1589311836849-4cec35b363cb?auto=format&fit=crop&w=400&h=300&q=80"
+								class="card-img-top"
+								alt="Aurora Image"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Forest Tour</h5>
+								<p class="card-text">
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+									Aliquid quae possimus at.
+								</p>
+								<a href="#" class="btn btn-warning">Book Now</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card">
+							<img
+								src="https://images.unsplash.com/photo-1549633760-e91f5397021b?auto=format&fit=crop&w=400&h=300&q=80"
+								class="card-img-top"
+								alt="Aurora Image"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Lake Tour</h5>
+								<p class="card-text">
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+									Aliquid quae possimus at.
+								</p>
+								<a href="#" class="btn btn-warning">Book Now</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card">
+							<img
+								src="https://images.unsplash.com/photo-1550496913-b1a19c3779e9?auto=format&fit=crop&w=400&h=300&q=80"
+								class="card-img-top"
+								alt="Aurora Image"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Mountain Tour</h5>
+								<p class="card-text">
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+									Aliquid quae possimus at.
+								</p>
+								<a href="#" class="btn btn-warning">Book Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
